@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Lautaro Benitez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h2>LB</h2>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobre-mi" onclick="seleccionar(this)">Sobre mi</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Iconos menú responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/lautaro-nahuel-benitez/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:lauti.benitez.nahuel@gmail.com?subject=Seleccione%20cual%20es%20el%20motivo%20principal%20de%20su%20contacto&body=%C2%A1Hola%20Lautaro!%C2%BFC%C3%B3mo%20est%C3%A1s%3F%0D%0ANos%20ponemos%20en%20contacto%2C%20por%20el%20siguiente%20motivo...%0D%0A%0D%0AMOTIVO%3A%0D%0A"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/lautibenitez/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenido">Bienvenidos</p>
+                <h1><span>Lautaro Benitez</span></h1>
+                <p class="texto-largo">Estudiante de Licenciatura en gestión de Tecnología de la Información</p>
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MI-->
+    <section id="sobre-mi">
+        <div class="contenedor-foto">
+            <img src="perfil2.png" alt="">
+        </div>
+        <div class="sobre-mi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>¡Hola! Soy <span>Lautaro Benitez</span></h2>
+            <h3>Programador Junior Back-end y Front-end</h3>
+            <p>Actualmente me encuentro estudiando una Licenciatura en Gestión de Tecnología de la Información, en UADE.</p> 
+            <p>Cuento con conocimientos en programación WEB, conocimientos solidos en HTML, CSS y JavaScript. Cuento con varios proyectos implementando estas tecnologías.</p>
+            <p>También tengo conocimiento solidos del back-end con NodeJS, peticiones a API, creación de API, "exprimir" una API para utilizar datos para mi propia aplicación, etc.</p>
+            <p>Ampliando conocimientos y aprendiendo también sobre Bases de Datos en SQL y MongoDB.</p>
+            <p>Actualmente estoy realizando un curso en CoderHouse sobre Programación web con React.</p>
+            
+            <a target="_blank" href="Lautaro-Benitez-CV.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <div class="contenedor-skills" id="skills">
+        <h3>Habilidades</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>React</p>
+                <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="poo" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">45%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Portafolio -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto1.png" alt="">
+                <div class="info">
+                    <h3>MechaLoca</h3>
+                    <p><a class="visite-sitio" href="https://dj-productor.netlify.app/" target="_blank">Visite el sitio(Proyecto no terminado)</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto2.png" alt="">
+                <div class="info">
+                    <h3>Heladeria Sky</h3>
+                    <p ><a class="visite-sitio" href="https://heladeriaskybarra.netlify.app/" target="_blank">Visite el sitio</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyectoPokemon.png" alt="">
+                <div class="info">
+                    <h3>Adivina que Pokemon soy</h3>
+                    <p><a class="visite-sitio" href="https://94xzn6.csb.app/" target="_blank">Visite el sitio</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto3.png" alt="">
+                <div class="info">
+                    <h3>Diversidade e Inclusão no DNA do PageGroup</h3>
+                    <p><a class="visite-sitio" href="https://www.michaelpage.com.br/diversidade-e-inclusao" target="_blank">Visite el sitio</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto4.png" alt="">
+                <div class="info">
+                    <h3>De analista a gerente: planes de carrera del sector Salud</h3>
+                    <p><a class="visite-sitio" target="_blank" href="https://www.michaelpage.com.ar/estudios-y-tendencias/healthcare-life-science/analista-gerente-planes-carrera-salud">Visite el sitio</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="Proyecto5.png" alt="">
+                <div class="info">
+                    <h3>Planes de carrera para profesionales TI</h3>
+                    <p><a class="visite-sitio" target="_blank" href="https://www.michaelpage.com.ar/estudios-y-tendencias/it/planes-carrera-profesionales-tecnologia">Visite el sitio</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="Proyecto6.png" alt="">
+                <div class="info">
+                    <h3>La voz de los candidatos</h3>
+                    <p><a class="visite-sitio" target="_blank" href="https://www.michaelpage.com.ar/estudios-y-tendencias/La-voz-de-los-candidatos">Visite el sitio</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="coming-soon.png" alt="">
+                <div class="info">
+                    <h3>Page Interim</h3>
+                    <p><a href="https://www.pagepersonnel.com.mx/page-interim/pagers" target="_blank" class="visite-sitio">Visite el sitio</a></p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="coming-soon.png" alt="">
+                <div class="info">
+                    <h3>Page Consulting</h3>
+                    <p><a href="https://www.michaelpage.com.mx/page-consulting" target="_blank" class="visite-sitio">Visite el sitio</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="email" placeholder="Dirección de email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección footer-->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/lautaro-nahuel-benitez/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:lauti.benitez.nahuel@gmail.com?subject=Seleccione%20cual%20es%20el%20motivo%20principal%20de%20su%20contacto&body=%C2%A1Hola%20Lautaro!%C2%BFC%C3%B3mo%20est%C3%A1s%3F%0D%0ANos%20ponemos%20en%20contacto%2C%20por%20el%20siguiente%20motivo...%0D%0A%0D%0AMOTIVO%3A%0D%0A"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/lautibenitez/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
